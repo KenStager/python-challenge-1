@@ -50,13 +50,13 @@ menu = {
     }
 }
 
-# This is an empy list for containing the orders:
-# It should be noted that I adjusted the `str` from "string," reults currently unknown.
+# This is an empty list for containing the orders:
+# It should be noted that I adjusted the `str` from "string," results currently unknown.
 orders = []
 
 
-# 1. Set up order list. Order list will store a list of dictionaries for
-# menu item name, item price, and quantity ordered
+# 1. Set up an order list. Order list will store a list of dictionaries for
+# Menu item name, item price, and quantity ordered
 
 
 # Launch the store and present a greeting to the customer
@@ -74,7 +74,7 @@ while place_order:
     # Create a dictionary to store the menu for later retrieval
     menu_items = {}
 
-    # Print the options to choose from menu headings (all the first level
+    # Print the options to choose from menu headings (all the first-level
     # dictionary items in menu).
     for key in menu.keys():
         print(f"{i}: {key}")
@@ -166,7 +166,7 @@ while place_order:
         print("You didn't select a number.")
 
     
-# Here is my match. I saw the instructions asked for it, but my current install of Python won't work with match. I believe my code is correct, but I can not con
+# Here is my elif. I wanted to include both for practice.
     
    # while True:
    #      # Ask the customer if they would like to order anything else
