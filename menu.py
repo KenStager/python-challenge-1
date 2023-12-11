@@ -174,21 +174,17 @@ while place_order:
                 # Keep ordering
                 break
                 # Exit the keep ordering question loop
-        elif keep_ordering.lower() == 'n':
-                # Complete the order
-                
-                # Since the customer decided to stop ordering, thank them for
-                # their order
-                print("Thank you for your order!")
-                # Set this flag to false to exit the main ordering loop
-                place_order = False
-                # Exit the keep ordering question loop
-                break
-
-                # Tell the customer to try again
-        else:
-            #invalid input
-                print("Invalid Input. Please try again.")
+    match keep_ordering.lower():
+        case 'y':
+            # Keep ordering
+            break
+        case 'n':
+            # Complete the order
+            ...
+            # Exit the keep ordering question loop
+        case _:
+            # Invalid input
+            print("Invalid Input. Please try again.")
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
